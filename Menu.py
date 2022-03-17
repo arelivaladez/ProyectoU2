@@ -1,19 +1,34 @@
-#Muenu
-print("Menu;")
-Num= print("1 = Numeros fibonacci;")
-area= print ("2= Area del circulo;")
-r= print (input ("¿Que quieres realizar?;"))
+#Menú
+print("Menú")
+print("1: Área del circulo")
+print("2: Números Fibonacci")
+r = int(input("¿Qué deseas hacer?: "))
 
-Segun r Hacer
-		1:
-			print ("Area Circulo")
-            pi = 3.14
+if r == 1:
+	print ("Area Circulo")
+	pi = 3.14
 
-            radio = int(input("Ingresa el valor del radio: "))
-            area = (radio ** 2) * pi
-
-            print ("El area es ",  area)
-		2:
+	radio = int(input("Ingresa el valor del radio: "))
+	area = (radio ** 2) * pi
+	print ("El área es ", area)
+	
+elif r == 2:
+		n = int(input("Ingresa el numero: "))
+		a = 1
+		b = 1
+		if n == 1:
+			print('0')
+		elif n == 2:
+			print('0','1')
+		else:
+			print('0')
+			print(a)
+			print(b)
+		for i in range(n-3):
+			total = a + b
+			b=a
+			a= total
+			print(total)
 			
 
 
